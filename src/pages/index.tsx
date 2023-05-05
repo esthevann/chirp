@@ -1,4 +1,4 @@
-import { SignIn, SignInButton, useClerk, useUser } from "@clerk/nextjs";
+import { SignInButton, useClerk, useUser } from "@clerk/nextjs";
 import { type NextPage } from "next";
 import Head from "next/head";
 
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
         <div>
           {data?.map(post => (
             <div key={post.id}>{post.content}</div>
-            ))}
+          ))}
         </div>
       </main>
     </>
